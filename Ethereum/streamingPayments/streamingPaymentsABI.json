@@ -1,0 +1,241 @@
+{
+  "contractName": "StreamingPayments",
+  "abi": [
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "streamId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "cancelStream",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "_name",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "_receiver",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "_start",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "_end",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "newStream",
+  		"outputs": [],
+  		"stateMutability": "payable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "constructor"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "streamId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "withdrawEthFromStream",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "addr",
+  				"type": "address"
+  			}
+  		],
+  		"name": "allStreamsFromHolder",
+  		"outputs": [
+  			{
+  				"internalType": "uint256[]",
+  				"name": "",
+  				"type": "uint256[]"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "addr",
+  				"type": "address"
+  			}
+  		],
+  		"name": "allStreamsHolderParticipates",
+  		"outputs": [
+  			{
+  				"internalType": "uint256[]",
+  				"name": "",
+  				"type": "uint256[]"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "blockTime",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "contractOwner",
+  		"outputs": [
+  			{
+  				"internalType": "address",
+  				"name": "",
+  				"type": "address"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "streamCount",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "streamId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "streamedAmount",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "streams",
+  		"outputs": [
+  			{
+  				"internalType": "address",
+  				"name": "sender",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "receiver",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "streamName",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "start",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "end",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "toStream",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "amountSender",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "amountReceiver",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "bool",
+  				"name": "cancelled",
+  				"type": "bool"
+  			},
+  			{
+  				"internalType": "bool",
+  				"name": "streamEnded",
+  				"type": "bool"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "cancelledTime",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	}
+  ]
+}

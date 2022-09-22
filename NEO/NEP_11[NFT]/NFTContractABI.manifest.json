@@ -1,0 +1,262 @@
+{
+    "name": "test_21",
+    "groups": [],
+    "abi": {
+        "methods": [
+            {
+                "name": "_deploy",
+                "offset": 1379,
+                "parameters": [
+                    {
+                        "name": "data",
+                        "type": "Any"
+                    },
+                    {
+                        "name": "update",
+                        "type": "Boolean"
+                    }
+                ],
+                "returntype": "Void",
+                "safe": false
+            },
+            {
+                "name": "symbol",
+                "offset": 0,
+                "parameters": [],
+                "returntype": "String",
+                "safe": false
+            },
+            {
+                "name": "decimals",
+                "offset": 2,
+                "parameters": [],
+                "returntype": "Integer",
+                "safe": false
+            },
+            {
+                "name": "totalSupply",
+                "offset": 4,
+                "parameters": [],
+                "returntype": "Integer",
+                "safe": false
+            },
+            {
+                "name": "balanceOf",
+                "offset": 28,
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": "Hash160"
+                    }
+                ],
+                "returntype": "Integer",
+                "safe": false
+            },
+            {
+                "name": "tokensOf",
+                "offset": 68,
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": "Hash160"
+                    }
+                ],
+                "returntype": "InteropInterface",
+                "safe": false
+            },
+            {
+                "name": "ownerOf",
+                "offset": 98,
+                "parameters": [
+                    {
+                        "name": "tokenId",
+                        "type": "ByteArray"
+                    }
+                ],
+                "returntype": "Hash160",
+                "safe": false
+            },
+            {
+                "name": "tokens",
+                "offset": 184,
+                "parameters": [],
+                "returntype": "InteropInterface",
+                "safe": false
+            },
+            {
+                "name": "properties",
+                "offset": 198,
+                "parameters": [
+                    {
+                        "name": "tokenId",
+                        "type": "ByteArray"
+                    }
+                ],
+                "returntype": "ByteArray",
+                "safe": false
+            },
+            {
+                "name": "steamstoneCharges",
+                "offset": 234,
+                "parameters": [
+                    {
+                        "name": "tokenId",
+                        "type": "Integer"
+                    }
+                ],
+                "returntype": "Integer",
+                "safe": false
+            },
+            {
+                "name": "mint",
+                "offset": 272,
+                "parameters": [
+                    {
+                        "name": "account",
+                        "type": "Hash160"
+                    },
+                    {
+                        "name": "propString",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "receiver",
+                        "type": "Hash160"
+                    },
+                    {
+                        "name": "data_in",
+                        "type": "String"
+                    }
+                ],
+                "returntype": "Boolean",
+                "safe": false
+            },
+            {
+                "name": "transfer",
+                "offset": 644,
+                "parameters": [
+                    {
+                        "name": "to",
+                        "type": "Hash160"
+                    },
+                    {
+                        "name": "tokenId",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "data",
+                        "type": "Any"
+                    }
+                ],
+                "returntype": "Boolean",
+                "safe": false
+            },
+            {
+                "name": "onNEP11Payment",
+                "offset": 885,
+                "parameters": [
+                    {
+                        "name": "from_address",
+                        "type": "Hash160"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "Integer"
+                    },
+                    {
+                        "name": "tokenId",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "data",
+                        "type": "Any"
+                    }
+                ],
+                "returntype": "Void",
+                "safe": false
+            },
+            {
+                "name": "onNEP17Payment",
+                "offset": 890,
+                "parameters": [
+                    {
+                        "name": "from_address",
+                        "type": "Hash160"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "Integer"
+                    },
+                    {
+                        "name": "data_in",
+                        "type": "String"
+                    }
+                ],
+                "returntype": "Void",
+                "safe": false
+            },
+            {
+                "name": "_initialize",
+                "offset": 1555,
+                "parameters": [],
+                "returntype": "Void",
+                "safe": false
+            }
+        ],
+        "events": [
+            {
+                "name": "Transfer",
+                "parameters": [
+                    {
+                        "name": "from",
+                        "type": "Any"
+                    },
+                    {
+                        "name": "to",
+                        "type": "Any"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "Integer"
+                    },
+                    {
+                        "name": "tokenId",
+                        "type": "ByteArray"
+                    }
+                ]
+            },
+            {
+                "name": "notify",
+                "parameters": [
+                    {
+                        "name": "state",
+                        "type": "Any"
+                    }
+                ]
+            },
+            {
+                "name": "Debug",
+                "parameters": [
+                    {
+                        "name": "params",
+                        "type": "Array"
+                    }
+                ]
+            }
+        ]
+    },
+    "permissions": [
+        {
+            "contract": "*",
+            "methods": "*"
+        }
+    ],
+    "trusts": [],
+    "features": {},
+    "supportedstandards": [],
+    "extra": {
+        "Author": "Thomas Geyer",
+        "Email": "thomas.geyer@tec-consulting.at",
+        "Description": "Chain.Game Items"
+    }
+}

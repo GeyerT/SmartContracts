@@ -1,0 +1,337 @@
+{
+  "contractName": "WeightedDistribution",
+  "abi": [
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "_name",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "_supply",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "createShare",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "shareID",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "toRegister",
+  				"type": "address"
+  			}
+  		],
+  		"name": "registerShareholder",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "shareID",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "reward",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "rewardShareholder",
+  		"outputs": [
+  			{
+  				"internalType": "uint256[]",
+  				"name": "",
+  				"type": "uint256[]"
+  			}
+  		],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "shareID",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "rewardShareholderEth",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "payable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "shareID",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "amount",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "destinationShareholder",
+  				"type": "address"
+  			}
+  		],
+  		"name": "transferShareHoldings",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "constructor"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "shareID",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "toUnregister",
+  				"type": "address"
+  			}
+  		],
+  		"name": "unregisterShareholder",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "shareID",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "withdrawEthShareholder",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "allShares",
+  		"outputs": [
+  			{
+  				"internalType": "address",
+  				"name": "creator",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "name",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "transferCount",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "totalSupply",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "holderIDvar",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "holderCount",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "addr",
+  				"type": "address"
+  			}
+  		],
+  		"name": "allSharesFromHolder",
+  		"outputs": [
+  			{
+  				"internalType": "uint256[]",
+  				"name": "",
+  				"type": "uint256[]"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "addr",
+  				"type": "address"
+  			}
+  		],
+  		"name": "allSharesHolderParticipates",
+  		"outputs": [
+  			{
+  				"internalType": "uint256[]",
+  				"name": "",
+  				"type": "uint256[]"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "contractOwner",
+  		"outputs": [
+  			{
+  				"internalType": "address",
+  				"name": "",
+  				"type": "address"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "getBalance",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "shareID",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "addr",
+  				"type": "address"
+  			}
+  		],
+  		"name": "getBalanceOf",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "shareCount",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "addr",
+  				"type": "address"
+  			}
+  		],
+  		"name": "sumAllRewardsOfHolder",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "shareID",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "addr",
+  				"type": "address"
+  			}
+  		],
+  		"name": "sumWithdrawableOfHolderFromShare",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	}
+  ]
+}
